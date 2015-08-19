@@ -20,7 +20,7 @@ public class HBaseCounterIncrementor {
 	static String columnFamily;
 	static HTable hTable;
 	static long lastUsed;
-	static long flushInterval;
+	static long flushInterval = 0;
 	static CloserThread closerThread;
 	static FlushThread flushThread;
 	static HashMap<String, CounterMap> rowKeyCounterMap = new HashMap<String, CounterMap>(); 
